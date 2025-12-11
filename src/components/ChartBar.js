@@ -103,12 +103,12 @@ export default function ChartBar() {
     }, []);
     return (
         <Card>
-            <CardHeader color="pink" contentPosition="left">
+            {/* <CardHeader color="pink" contentPosition="left">
                 <h6 className="uppercase text-gray-200 text-xs font-medium">
                     Overview
                 </h6>
                 <h2 className="text-white text-2xl">Sales value</h2>
-            </CardHeader>
+            </CardHeader> */}
             <CardBody>
                 <div className="relative h-96">
                     <canvas id="bar-chart"></canvas>

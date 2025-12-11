@@ -9,7 +9,7 @@ export default function footer() {
                     rel="noreferrer"
                     className="text-light-blue-500 hover:text-light-blue-700"
                 >
-                    Creative Tim
+                    
                 </a>
             </p>
 
