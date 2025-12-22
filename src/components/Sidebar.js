@@ -24,7 +24,19 @@ export default function Sidebar() {
                     >
                         <H6 color="gray">Admin-Panel</H6>
                     </a>
-                    <div className="flex flex-col">
+                    {/* <div className="my-4 h-0.5 bg-light-blue-500 w-full">
+                        <NavLink
+                            to="/login"
+                            exact
+                            className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
+                            activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
+                        >
+                            <Icon name="login" size="2xl" />
+                           Login
+                        </NavLink>
+                    </div> */}
+
+                      {/* <div className="flex flex-col">
                         <hr className="my-4 min-w-full" />
 
                         <ul className="flex-col min-w-full flex list-none">
@@ -138,7 +150,7 @@ export default function Sidebar() {
                                 </a>
                             </li>
                         </ul>
-                    </div>
+                    </div>  */}
                 </div>
             </div>
         </>
