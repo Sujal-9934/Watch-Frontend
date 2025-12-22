@@ -1,0 +1,54 @@
+.register-container {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-container h2 {
+  text-align: center;
+}
+
+.register-container input {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+}
+
+.register-container button {
+  width: 100%;
+  padding: 8px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.register-container button:hover {
+  background-color: #45a049;
+}
+
+.register-container .two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+@media (max-width: 480px) {
+  .register-container .two-column {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Ensure inputs use border-box so padding doesn't break grid widths */
+.register-container input,
+.register-container textarea {
+  box-sizing: border-box;
+}
+
+/* Date inputs can look small; give them consistent padding */
+.register-container input[type="date"] {
+  padding: 8px;
+}
+

@@ -8,6 +8,7 @@ import Footer from 'components/Footer';
 
 // Tailwind CSS Style Sheet
 import 'assets/styles/tailwind.css';
+import Register from 'components/auth/Register';
 
 function App() {
     return (
@@ -15,10 +16,13 @@ function App() {
             <Sidebar />
             <div className="md:ml-64">
                 <Switch>
+                    {/*
                     <Route exact path="/" component={Dashboard} />
                     <Route exact path="/settings" component={Settings} />
                     <Route exact path="/tables" component={Tables} />
                     <Route exact path="/maps" component={Maps} />
+                    */}
+                    <Route exact path="/" component={Register} />
                     <Redirect from="*" to="/" />
                 </Switch>
                 <Footer />
