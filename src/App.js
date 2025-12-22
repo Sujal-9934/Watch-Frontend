@@ -1,4 +1,4 @@
-import { Switch, Route, Redirect, useLocation } from 'react-router-dom';
+import { Switch, Route, Redirect,Routes } from 'react-router-dom';
 import Sidebar from 'components/Sidebar';
 import Dashboard from 'pages/Dashboard';
 import Settings from 'pages/Settings';
@@ -12,24 +12,20 @@ import Login from 'components/auth/Login';
 import 'assets/styles/tailwind.css';
 
 function App() {
-    const location = useLocation();
-    const token = localStorage.getItem('token');
-    const showShell = location.pathname !== '/login';
-
     return (
         <>
-            {showShell && <Sidebar />}
-            <div className={showShell ? 'md:ml-64' : ''}>
+            
+            <Sidebar />
+           <Route exact path="/Login" element={<Login />} />
+            <div className="md:ml-64">
                 <Switch>
-                    <Route exact path="/login" component={Login} />
-                    <Route exact path="/Dashboard" component={Dashboard} />
+                    {/* <Route exact path="/" component={Dashboard} />
                     <Route exact path="/settings" component={Settings} />
                     <Route exact path="/tables" component={Tables} />
-                    <Route exact path="/maps" component={Maps} />
-                    <Redirect exact from="/" to={token ? '/Dashboard' : '/login'} />
-                    <Redirect to={token ? '/Dashboard' : '/login'} />
-                </Switch>
-              {showShell && <Footer />}
+                    <Route exact path="/maps" component={Maps} /> */}
+                    <Redirect from="*" to="/Login" />
+                </Switch> 
+              <Footer />
             </div>
         </>
     );

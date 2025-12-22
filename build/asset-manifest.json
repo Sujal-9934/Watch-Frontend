@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/material-tailwind-dashboard-react/static/css/main.4e2fe10d.chunk.css",
+    "main.js": "/material-tailwind-dashboard-react/static/js/main.8b3cac23.chunk.js",
+    "main.js.map": "/material-tailwind-dashboard-react/static/js/main.8b3cac23.chunk.js.map",
+    "runtime-main.js": "/material-tailwind-dashboard-react/static/js/runtime-main.9c8c49ca.js",
+    "runtime-main.js.map": "/material-tailwind-dashboard-react/static/js/runtime-main.9c8c49ca.js.map",
+    "static/js/2.53ff40e3.chunk.js": "/material-tailwind-dashboard-react/static/js/2.53ff40e3.chunk.js",
+    "static/js/2.53ff40e3.chunk.js.map": "/material-tailwind-dashboard-react/static/js/2.53ff40e3.chunk.js.map",
+    "static/js/3.891e57a0.chunk.js": "/material-tailwind-dashboard-react/static/js/3.891e57a0.chunk.js",
+    "static/js/3.891e57a0.chunk.js.map": "/material-tailwind-dashboard-react/static/js/3.891e57a0.chunk.js.map",
+    "index.html": "/material-tailwind-dashboard-react/index.html",
+    "static/css/main.4e2fe10d.chunk.css.map": "/material-tailwind-dashboard-react/static/css/main.4e2fe10d.chunk.css.map",
+    "static/js/2.53ff40e3.chunk.js.LICENSE.txt": "/material-tailwind-dashboard-react/static/js/2.53ff40e3.chunk.js.LICENSE.txt",
+    "static/media/team-1-800x800.fa5a7ac2.jpg": "/material-tailwind-dashboard-react/static/media/team-1-800x800.fa5a7ac2.jpg",
+    "static/media/team-2-800x800.3e08ef14.jpg": "/material-tailwind-dashboard-react/static/media/team-2-800x800.3e08ef14.jpg",
+    "static/media/team-3-800x800.19201574.jpg": "/material-tailwind-dashboard-react/static/media/team-3-800x800.19201574.jpg",
+    "static/media/team-4-470x470.4ef82ef4.png": "/material-tailwind-dashboard-react/static/media/team-4-470x470.4ef82ef4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9c8c49ca.js",
+    "static/js/2.53ff40e3.chunk.js",
+    "static/css/main.4e2fe10d.chunk.css",
+    "static/js/main.8b3cac23.chunk.js"
+  ]
+}
