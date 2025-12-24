@@ -24,19 +24,8 @@ export default function Sidebar() {
                     >
                         <H6 color="gray">Admin-Panel</H6>
                     </a>
-                    {/* <div className="my-4 h-0.5 bg-light-blue-500 w-full">
-                        <NavLink
-                            to="/login"
-                            exact
-                            className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
-                            activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
-                        >
-                            <Icon name="login" size="2xl" />
-                           Login
-                        </NavLink>
-                    </div> */}
 
-                      {/* <div className="flex flex-col">
+                    <div className="flex flex-col">
                         <hr className="my-4 min-w-full" />
 
                         <ul className="flex-col min-w-full flex list-none">
@@ -51,7 +40,7 @@ export default function Sidebar() {
                                     Dashboard
                                 </NavLink>
                             </li>
-                            <li className="rounded-lg mb-2">
+                            {/* <li className="rounded-lg mb-2">
                                 <NavLink
                                     to="/settings"
                                     className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
@@ -60,8 +49,8 @@ export default function Sidebar() {
                                     <Icon name="settings" size="2xl" />
                                     Settings
                                 </NavLink>
-                            </li>
-                            <li className="rounded-lg mb-2 ">
+                            </li> */}
+                            {/* <li className="rounded-lg mb-2 ">
                                 <NavLink
                                     to="/tables"
                                     className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
@@ -70,8 +59,8 @@ export default function Sidebar() {
                                     <Icon name="toc" size="2xl" />
                                     Tables
                                 </NavLink>
-                            </li>
-                            <li className="rounded-lg mb-2 text-gray-700">
+                            </li> */}
+                            {/* <li className="rounded-lg mb-2 text-gray-700">
                                 <NavLink
                                     to="/maps"
                                     className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
@@ -80,50 +69,26 @@ export default function Sidebar() {
                                     <Icon name="map" size="2xl" />
                                     Maps
                                 </NavLink>
-                            </li>
+                            </li> */}
                             <li className="px-4 rounded-lg mb-2 text-gray-700">
-                                <a
-                                    href="https://demos.creative-tim.com/material-tailwind-kit-react/#/login"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="flex items-center gap-4 text-sm font-light py-3"
-                                >
-                                    <Icon name="fingerprint" size="2xl" />
-                                    Login
-                                </a>
-                            </li>
-                            <li className="px-4 rounded-lg mb-2 text-gray-700">
-                                <a
-                                    href="https://demos.creative-tim.com/material-tailwind-kit-react/#/register"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="flex items-center gap-4 text-sm font-light py-3"
+                                <NavLink
+                                    to="/register"
+                                    className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
+                                    activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
                                 >
                                     <Icon name="list_alt" size="2xl" />
                                     Register
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="px-4 rounded-lg mb-2 text-gray-700">
-                                <a
-                                    href="https://demos.creative-tim.com/material-tailwind-kit-react/#/landing"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="flex items-center gap-4 text-sm font-light py-3"
+                                <NavLink
+                                    to="/cards"
+                                    className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
+                                    activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
                                 >
-                                    <Icon name="web" size="2xl" />
-                                    Landing Page
-                                </a>
-                            </li>
-                            <li className="px-4 rounded-lg mb-2 text-gray-700">
-                                <a
-                                    href="https://demos.creative-tim.com/material-tailwind-kit-react/#/profile"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="flex items-center gap-4 text-sm font-light py-3"
-                                >
-                                    <Icon name="account_circle" size="2xl" />
-                                    Profile Page
-                                </a>
+                                    <Icon name="dashboard" size="2xl" />
+                                    Cards
+                                </NavLink>
                             </li>
                         </ul>
 
@@ -150,7 +115,7 @@ export default function Sidebar() {
                                 </a>
                             </li>
                         </ul>
-                    </div>  */}
+                    </div>
                 </div>
             </div>
         </>
