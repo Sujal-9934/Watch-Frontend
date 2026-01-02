@@ -13,7 +13,7 @@ const CardShowcase = () => {
     footer: (
       <div className="flex justify-between items-center">
         <span className="text-gray-600 text-sm font-semibold">2999.99</span>
-        <button className="px-3 py-1 bg-blue-500 text-white text-sm rounded hover:bg-blue-600">View</button>
+        <button className="px-3 py-1 bg-blue-500 text-white text-sm rounded hover:bg-blue-600">Buy Now</button>
       </div>
     ),
     onClick: () => handleCardClick(' Premium Watch'),
@@ -32,14 +32,21 @@ const CardShowcase = () => {
       title: ' Sport Watch',
       description: 'Lightweight sport watch with GPS and heart-rate monitoring.',
       image: 'https://www.bing.com/th/id/OIP.PRAZorMrV3eL3FXjtvU4SAHaJ2?w=160&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2',
-      footer: <div className="text-gray-600 text-sm font-semibold">1790.00</div>,
+      footer: <div className="text-gray-600 text-sm font-semibold">
+        <span className="text-gray-600 text-sm font-semibold">2999.99</span>
+        <button className="px-3 py-1 bg-blue-500 text-white text-sm rounded hover:bg-blue-600">Buy Now</button>
+      </div>,
       onClick: () => handleCardClick('Sport Watch'),
     },
     {
       title: ' Luxury Chrono',
       description: 'High-end chronograph with sapphire glass and ceramic bezel.',
       image: 'https://i.ytimg.com/vi/2bchIORxEhk/maxresdefault.jpg',
-      footer: <div className="text-gray-600 text-sm font-semibold">10499.00</div>,
+      footer: <div className="text-gray-600 text-sm font-semibold">
+        <span className="text-gray-600 text-sm font-semibold">2999.99</span>
+        <button className="px-3 py-1 bg-blue-500 text-white text-sm rounded hover:bg-blue-600">Buy Now</button>
+
+      </div>,
       onClick: () => handleCardClick('Luxury Chrono'),
     },
   ];

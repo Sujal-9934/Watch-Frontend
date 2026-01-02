@@ -8,23 +8,24 @@ import CardShowcase from 'pages/CardShowcase';
 import Footer from 'components/Footer';
 import Login from 'components/auth/Login';
 import Register from 'components/auth/Register';
-
+import  WatchProvider  from 'store/WatchStore';
 
 // Tailwind CSS Style Sheet
 import 'assets/styles/tailwind.css';
 
+
 function App() {
     const location = useLocation();
     const token = localStorage.getItem('token');
-    const isAuthPage = location.pathname === '/login' || location.pathname === '/register';
+        const isAuthPage = location.pathname === '/Login' || location.pathname === '/register';
 
     return (
-        <>
+        <WatchProvider>
             {!isAuthPage && <Sidebar />}
             <div className={!isAuthPage ? 'md:ml-64' : ''}>
                 <Switch>
-                    <Route exact path="/login" component={Login} />
-                    <Route exact path="/register" component={Register} />
+                    <Route exact path="/Login" component={Login} />
+                    <Route exact path="/Register" component={Register} />
                     {token && (
                         <>
                             <Route exact path="/Dashboard" component={Dashboard} />
@@ -34,12 +35,12 @@ function App() {
                             <Route exact path="/cards" component={CardShowcase} />
                         </>
                     )}
-                    <Redirect exact from="/" to={token ? '/Dashboard' : '/login'} />
-                    <Redirect to={token ? '/Dashboard' : '/login'} />
+                    <Redirect exact from="/" to={token ? '/Dashboard' : '/Login'} />
+                    <Redirect to={token ? '/Dashboard' : '/Login'} />
                 </Switch> 
                 {!isAuthPage && <Footer />}
             </div>
-        </>
+        </WatchProvider>
     );
 }
 

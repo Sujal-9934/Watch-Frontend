@@ -93,7 +93,7 @@ function Login({ apiUrl = process.env.REACT_APP_LOGIN_API || 'http://localhost:5
                         </div>
 
                         <div className="flex items-center justify-between">
-                            <NavLink to="/register" className="text-sm text-indigo-600 hover:underline">Create account</NavLink>
+                            <NavLink to="/Register" className="text-sm text-indigo-600 hover:underline">Create account</NavLink>
                             <button
                                 type="submit"
                                 disabled={loading}

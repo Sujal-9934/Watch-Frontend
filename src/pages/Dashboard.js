@@ -1,11 +1,13 @@
 import StatusCard from 'components/StatusCard';
 // Chart components are commented out in source; use placeholders to avoid import errors
-const ChartLine = () => <div className="h-64 bg-white rounded shadow-sm" />;
-const ChartBar = () => <div className="h-64 bg-white rounded shadow-sm" />;
+
 import PageVisitsCard from 'components/PageVisitsCard';
 import TrafficCard from 'components/TrafficCard';
-
+// import WatchSlider from 'components/WatchSlider';
+const ChartLine = () => <div className="h-64 bg-white rounded shadow-sm" />;
+const ChartBar = () => <div className="h-64 bg-white rounded shadow-sm" />;
 export default function Dashboard() {
+
     return (
         <>
             <div className="bg-light-blue-500 px-3 md:px-8 h-40" />
@@ -20,6 +22,13 @@ export default function Dashboard() {
                             <ChartBar />
                         </div>
                     </div>
+                </div>
+            </div>
+
+            {/* Watch Slider Section
+            <div className="px-3 md:px-8 mb-8">
+                <div className="container mx-auto max-w-full">
+                    <WatchSlider />
                 </div>
             </div>
 
@@ -68,7 +77,7 @@ export default function Dashboard() {
                         />
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <div className="px-3 md:px-8 h-auto">
                 <div className="container mx-auto max-w-full">
